@@ -2,7 +2,7 @@
   <div class="page-header">
     <div class="page-header-index-wide">
       <s-breadcrumb />
-      <div class="detail">
+      <!-- <div class="detail">
         <div class="main" v-if="!$route.meta.hiddenHeaderContent">
           <div class="row">
             <img v-if="logo" :src="logo" class="logo"/>
@@ -26,7 +26,7 @@
             <slot name="pageMenu"></slot>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

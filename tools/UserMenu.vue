@@ -1,5 +1,19 @@
 <template>
-  <div class="user-wrapper">
+  <div>
+  <div style="float:left;height:60px;margin:-66px 0 0 80px;">
+    <a-menu
+      theme="light"
+      mode="horizontal"
+      :defaultSelectedKeys="['2']"
+      :style="{ lineHeight: '64px' }"
+    >
+      <a-menu-item key="1">nav 1</a-menu-item>
+      <a-menu-item key="2">nav 2</a-menu-item>
+      <a-menu-item key="3">nav 3</a-menu-item>
+    </a-menu>
+  </div>
+  <div class="user-wrapper" style="margin-top:-66px;">
+	  
     <div class="content-box">
 	 <a-dropdown :trigger="['click']">
 	     <a class="ant-dropdown-link" href="#"> 
@@ -111,6 +125,7 @@
         </a-dropdown>
     </div>
   </div>
+  </div>
 </template>
 
 <script>
@@ -132,7 +147,7 @@ export default {
       visible: false,
       confirmLoading: false,
       download_agent: false,
-      
+      collapsed: false,
       mdl: {},
       // 高级搜索 展开/关闭
       advanced: false,
@@ -239,3 +254,12 @@ export default {
   }
 }
 </script>
+<style>
+  #components-layout-demo-top-side-2 .logo {
+    width: 120px;
+    height: 31px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 16px 28px 16px 0;
+    float: left;
+  }
+</style>
